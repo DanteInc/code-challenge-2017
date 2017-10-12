@@ -1,8 +1,9 @@
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 public class Person {
 
@@ -10,14 +11,14 @@ public class Person {
 	private Map<String, Long> neighborHoodInterests;
 
 	Map<String, Integer> interests;
-	Set<String> visitedHoods;
+	SortedSet<String> visitedHoods;
 	private int locationCount;
 
 	public Person(String id) {
 		this.id = id;
 		neighborHoodInterests = new HashMap<String, Long>();
 		interests = new HashMap<String, Integer>();
-		visitedHoods = new HashSet<String>();
+		visitedHoods = new TreeSet<String>();
 		locationCount = 0;
 
 		// processEvents(events);
