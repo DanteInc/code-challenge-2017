@@ -45,7 +45,7 @@ public class Main {
 	private static void generateOutput(int numRuns, ArrayList<Event> events) {
 		Submission submit = new Submission();
 		ArrayList<Long> times = new ArrayList<Long>();
-		for(int ctr = 0; ctr < 10; ctr++) {
+		for(int ctr = 0; ctr < 1; ctr++) { // should be 10
 			final long startTime = System.currentTimeMillis();
 			submit.setLeastInterestedNeighborhood(EventAnalyzer.leastInterestedNeighborhood(events));
 			submit.setMostInterestedNeighborhood(EventAnalyzer.mostInterestedNeighborhood(events));
